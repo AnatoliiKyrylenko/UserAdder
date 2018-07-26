@@ -1,13 +1,13 @@
 #!/bin/bash
-# RU version
+# En version
 
-echo "Введите приставку имени"
+echo "Enter beginning of name"
 read bg_name
 
-CMD='useradd -m -s /bin/bash $bg_name${i}' # bg_name приставка имени новых пользователей + номер из пула
-for i in {1..7}	# Пул пользователей пользователей, с 1 по 7 в нашем случае
-# В конечном итоге имена пользователей будут иметь вид приставка1, приставка2 и т.д
+CMD='useradd -m -s /bin/bash $bg_name${i}' # bg_name beginning of name + namber of pool
+for i in {1..7}	# Pool of users Пул, from 1 to 7
+
 do
-	echo -n "${i}: "
-	eval $CMD && echo "Создан" || echo "ERROR! Что-то не так (sudo не забыл)"
+	echo -n "${i}: " # show result
+	eval $CMD && echo "Created" || echo "ERROR! Something wrong (maybe missed - sudo)"
 done
