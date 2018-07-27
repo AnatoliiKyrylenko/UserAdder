@@ -22,7 +22,7 @@
 ## RUN
 
 \# bash ./UserAdder.sh
-
+***
 ## Explanation
 Script for creating many users
 * Starting # sudo bash ./UserAdder.sh
